@@ -20,7 +20,6 @@ st.title("🕰️ Koekjesgame Module 4")
 col1, col2, col3 = st.columns(3)
 
 # Dynamische knoppen toevoegen
-st.divider()
 st.subheader("➕ Voeg knoppen toe om tijd mee te registreren")
 
 # Inputvelden voor nieuwe knop
