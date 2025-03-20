@@ -15,35 +15,20 @@ def log_action(action):
     st.session_state.logs.append({'Action': action, 'Timestamp': timestamp})
 
 # UI Titel
-st.title("🕰️ Timestamping Tool")
+st.title("🕰️ Koekjesgame Module 4")
 
-# 🎛️ Standaard knoppen
-st.subheader("🎛️ Standaard Bedieningspaneel")
 col1, col2, col3 = st.columns(3)
-
-with col1:
-    if st.button("🟢 Start", use_container_width=True, key="start"):
-        log_action("Start")
-
-with col2:
-    if st.button("🟡 Pause", use_container_width=True, key="pause"):
-        log_action("Pause")
-
-with col3:
-    if st.button("🔴 Stop", use_container_width=True, key="stop"):
-        log_action("Stop")
 
 # Dynamische knoppen toevoegen
 st.divider()
-st.subheader("➕ Dynamische Knoppen Toevoegen")
+st.subheader("➕ Voeg knoppen toe om tijd mee te registreren")
 
 # Inputvelden voor nieuwe knop
 new_button_name = st.text_input("Naam van de knop:")
-new_button_color = st.color_picker("Kies een kleur:", "#00FF00")
 add_button = st.button("Voeg Knop Toe")
 
 if add_button and new_button_name:
-    st.session_state.dynamic_buttons[new_button_name] = new_button_color
+    st.session_state.dynamic_buttons[new_button_name] = new_button_name
     log_action(f"Knop '{new_button_name}' toegevoegd")
 
 # 📝 Weergeven van dynamische knoppen
