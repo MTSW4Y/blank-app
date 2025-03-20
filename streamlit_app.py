@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("🎈 My new app")
+st.title("🎈 Mijn nieuwe app")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "Let's start building! en kijk ook eens hier:[docs.streamlit.io](https://docs.streamlit.io/)."
 )
