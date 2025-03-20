@@ -15,7 +15,7 @@ def log_action(action):
     st.session_state.logs.append({'Action': action, 'Timestamp': timestamp})
 
 # UI Titel
-st.title("🕰️ Timestamping Tool")
+st.title("🕰️ Timestamping Tool oftewel een tijdstampertool")
 
 # 🎛️ Standaard knoppen
 st.subheader("🎛️ Standaard Bedieningspaneel")
